@@ -4,7 +4,7 @@ import {FaGooglePlay,FaApple} from 'react-icons/fa'
 
 const Riders = () => {
     return (
-        <Container id='riders'>
+        <Container id='ride'>
             <div>
     
             </div>
