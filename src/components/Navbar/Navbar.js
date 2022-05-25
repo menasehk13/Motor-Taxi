@@ -49,7 +49,7 @@ const Nav = () => {
                 home
               </Link>
             </li>
-            <li className="">
+            <li>
               <Link
                 spy={true}
                 smooth={true}

@@ -14,20 +14,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
- li.active{
-   position: relative;
+ .active{
+    border-bottom: 2px solid orange;
+  
 }
- .active::before{
-  width:2rem;
-  height:2rem;
-  background-color:brown;
-  border-radius: 50%;
-  position: absolute;
-  top:50%;
-  right:50%;
-  transform:translate(-50%,-50%);
 
- }
 .activeheader{
   background-color:rgb(255, 255, 255);
   border-bottom: 0.1px solid #ddd;
