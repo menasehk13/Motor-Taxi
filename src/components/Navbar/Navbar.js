@@ -11,7 +11,7 @@ const Nav = () => {
     console.log(show);
   };
   const changeBackground = (e) => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >=50) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -37,7 +37,7 @@ const Nav = () => {
 
         <div className={show ? "activeul menu" : "menu"}>
           <ul className="flex">
-            <li className="active">
+            <li>
               <Link
                 spy={true}
                 smooth={true}
@@ -232,9 +232,8 @@ const Header = styled.div`
             cursor: pointer;
             color: #5dade2;
             text-decoration: none;
-            &:hover {
-              /* padding-top: 0.1px; */
-              border-bottom: 2px solid #a00;
+            &:hover{
+              color: #ffa500;
             }
           }
         }
