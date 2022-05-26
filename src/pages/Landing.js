@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Driver from "../components/Driver/Driver";
 import Riders from "../components/Riders/Riders";
 import Footer from "../components/Footer/Footer";
-
+import CusomerReview from "../components/CustomerReview/CusomerReview";
 
 const Landing = () => {
   return (
@@ -14,6 +14,7 @@ const Landing = () => {
         <HowItWorks/>
         <Driver/>
         <Riders/>
+        <CusomerReview/>
         <Footer/>
     </Container>
   )

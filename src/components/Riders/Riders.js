@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import {FaGooglePlay,FaApple} from 'react-icons/fa'
-
+import ImageUser from '../../assets/image/photo1653549036.jpeg'
 const Riders = () => {
     return (
         <Container id='ride'>
-            <div>
-    
+            <div className='w-[50%] flex justify-center items-center'>
+            <img src={ImageUser} className='h-[400px] ' alt='rider'/>
             </div>
-            <div className='flex flex-col gap-3'>
-                <h1 className='text-black font-bold text-[28px] text-start'>Download the Addis Motor Rider <br/> And  Enjoy The Fast Service! </h1>
-                <p className='text-[14px] w-[400px]'>Addis Motor Taxi is the first and only government-licensed company in Ethiopia that is creating jobs for motorcycles and taxi service providers and is working to increase the income of professionals in the sector. Download the app to work with us and submit the required documentation to register.We invite you to participate by downloading our app, which brings various benefits and upcoming new features to the industry.</p>
+            <div className='flex flex-col gap-3 w-[50%]'>
+                <h1 className='text-black font-bold text-[28px] text-start font-poppins'>Download the Addis Motor Rider <br/> And  Enjoy The Fast Service! </h1>
+                <p className='text-[14px] w-[400px] font-poppins' >Addis Motor Taxi is the first and only government-licensed company in Ethiopia that is creating jobs for motorcycles and taxi service providers and is working to increase the income of professionals in the sector. Download the app to work with us and submit the required documentation to register.We invite you to participate by downloading our app, which brings various benefits and upcoming new features to the industry.</p>
                 <div className='flex flex-row mt-10 gap-2  '>
                <button className='flex flex-row leading-tight p-1  justify-center items-center border-2 rounded-[10px] border-white bg-black '>
                    <FaGooglePlay color='#ffffff'   size={"40px"} />
