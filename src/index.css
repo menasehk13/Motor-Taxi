@@ -14,3 +14,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+li{
+  position: relative;
+}
+ .active{
+    border-bottom: 2px solid rgb(73, 166, 241);
+    color: #ffa500;
+    padding: 5px 0px;
+    
+}
+.active::before{
+   border-radius: 50%;
+    width:1rem;
+    height:1rem;
+    top:50%;
+    left:50%;
+    position:absolute;
+    background-color:blue;
+}
+
+.activeheader{
+  background-color:rgb(255, 255, 255);
+  border-bottom: 0.1px solid #ddd;
+}

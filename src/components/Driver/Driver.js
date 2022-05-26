@@ -4,7 +4,7 @@ import {FaGooglePlay,FaApple} from 'react-icons/fa'
 
 const Driver = () => {
   return (
-    <Container id='drivers'>
+    <Container id='driver'>
         <div>
 
         </div>
