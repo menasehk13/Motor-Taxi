@@ -29,7 +29,7 @@ const Nav = () => {
           <a
             to="/"
             className="tracking-wider cursor-pointer font-bold
-             text-center text-red-600 capitalize"
+             text-center text-black capitalize"
           >
             Addismotortaxi
           </a>
@@ -98,7 +98,7 @@ const Nav = () => {
               </Link>
             </li>
 
-            <button className="bg-blue-400  px-3 py-1 rounded-md">
+            <button className="bg-green-400 text-base text-black capitalize font-medium  px-3 py-2 rounded-md">
               help center
             </button>
           </ul>
