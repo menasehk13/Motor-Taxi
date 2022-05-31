@@ -230,7 +230,7 @@ const Header = styled.div`
             text-transform: capitalize;
             transition: all 0.3s ease-in-out;
             cursor: pointer;
-            color: #5dade2;
+            color: #ffffff;
             text-decoration: none;
             &:hover{
               color: #ffa500;
