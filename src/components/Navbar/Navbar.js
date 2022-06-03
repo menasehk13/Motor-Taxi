@@ -11,7 +11,7 @@ const Nav = () => {
     console.log(show);
   };
   const changeBackground = (e) => {
-    if (window.scrollY >=50) {
+    if (window.scrollY >= 50) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -23,7 +23,7 @@ const Nav = () => {
   });
   
   return (
-    <Header className={navbar ? "activeheader header" : "motor"}>
+    <Header className={navbar ? "activeheader header" : "header"}>
       <nav className="px-2">
         <div className="logo">
           <a
@@ -136,10 +136,8 @@ const Header = styled.div`
   display: flex;
   z-index: 100;
   transition: all 0.3s;
-  align-items: center;
-  .activeheader {
-    background-color: black;
-  }
+  
+  
   nav {
     display: flex;
     align-items: center;

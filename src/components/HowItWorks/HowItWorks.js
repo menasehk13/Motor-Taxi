@@ -9,15 +9,16 @@ import ImageDriver from "../../assets/image/t3.png";
 const HowItWorks = () => {
   return (
     <Container className="font-poppins">
-      <h1 className="text-black text-[30px] font-bold">
-        How Addis Motor Works
-      </h1>
-      <p className="mt-2 text-[14px]">
-        
-        Download Addis Motor taxi app from playstore, Create account use your
-        motor and
-        <br /> driver by yourself. Get ride and earn more money
-      </p>
+      <div className=" flex justify-center items-center text-center flex-col py-3">
+        <h1 className="text-black text-[30px] font-bold">
+          How Addis Motor Works
+        </h1>
+        <p className="mt-2 text-[14px]">
+          Download Addis Motor taxi app from playstore, <br /> Create account
+          use your motor and
+          <br /> driver by yourself. Get ride and earn more money
+        </p>
+      </div>
       <Work>
         {/* left */}
         <div className="flex flex-col gap-5  justify-end align-end items-end ">
@@ -27,8 +28,8 @@ const HowItWorks = () => {
             </div>
             <h1 className="text-[16px] font-semibold">Request A Trip</h1>
             <p className=" text-[12px] ">
-              Choose your pick and drop-off location and the trip type
-              that meets your need
+              Choose your pick and drop-off location and the trip type that
+              meets your need
             </p>
           </div>
           <div className="lineshow flex flex-col w-[190px]  gap-2 justify-center items-center cursor-pointer  p-5 shadow-lg  shadow-slate-400 rounded-md">
@@ -37,25 +38,24 @@ const HowItWorks = () => {
             </div>
             <h1 className="text-[16px] font-semibold">Enjoy Your Trip</h1>
             <p className=" text-[12px] ">
-              Meet your driver with the help of our real time GPS service
-              and  enjoy your trip
+              Meet your driver with the help of our real time GPS service and
+              enjoy your trip
             </p>
           </div>
         </div>
         {/* center */}
         <div className="flex w-full justify-center items-center">
           <div className=" absolute z-0 bg-slate-300 h-[300px] w-[300px] rounded-full "></div>
-         <div className='w-[400px] h-[500px]'>
-          <img
-               className="w-full h-full relative object-cover "
-               src={ImageDriver}
-               alt="arrived"
-               />
-         </div>
-        
+          <div className="w-[400px] h-[500px]">
+            <img
+              className="w-full h-full relative object-cover "
+              src={ImageDriver}
+              alt="arrived"
+            />
+          </div>
         </div>
         {/* right */}
-        <div className="flex flex-col gap-5 justify-start align-start items-start  w-[30%]">
+        <div className="flex flex-col gap-5 justify-center align-center items-center  w-[30%]">
           <div className="lineshow flex flex-col w-[190px] h-auto gap-2 justify-center items-center cursor-pointer  p-5 shadow-lg  shadow-slate-400 rounded-md">
             <div className="p-3 bg-blue-100 rounded-md ">
               <GiFullMotorcycleHelmet size={28} color="blue" />
@@ -72,8 +72,7 @@ const HowItWorks = () => {
             </div>
             <h1 className="text-[16px] font-semibold">Pay and Rate</h1>
             <p className=" text-[12px] ">
-              pay with cash or your preffered mobile banking and
-              rate our driver
+              pay with cash or your preffered mobile banking and rate our driver
             </p>
           </div>
         </div>
@@ -85,13 +84,14 @@ const HowItWorks = () => {
 const Container = styled.div`
   width: 100%;
   height: auto;
-  /* background-color: aliceblue; */
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
+  background-color: aliceblue;
+ 
+  h1{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size:.622rem;
+  }
 `;
 const Work = styled.div`
   display: flex;
@@ -102,5 +102,14 @@ const Work = styled.div`
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+   @media screen and (max-width:768px){
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top:2rem;
+   }
+
+
+
 `;
 export default HowItWorks;
