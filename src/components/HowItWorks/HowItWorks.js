@@ -83,9 +83,8 @@ const HowItWorks = () => {
 
 const Container = styled.div`
   width: 100%;
-  height: auto;
-  background-color: aliceblue;
- 
+  height: 100%;
+  margin: 4rem 0;
   h1{
     font-size: 1.5rem;
   }
@@ -97,7 +96,7 @@ const Work = styled.div`
   display: flex;
   margin-top: 3%;
   width: 100%;
-  max-width: 960px;
+  max-width: 1110px;
   gap:25px;
   margin: 0 auto;
   justify-content: space-between;

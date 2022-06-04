@@ -21,21 +21,22 @@ const Nav = () => {
     changeBackground();
     window.addEventListener("scroll", changeBackground);
   });
-  
+
   return (
     <Header className={navbar ? "activeheader header" : "header"}>
       <nav className="px-2">
         <div className="logo">
-          <a
-            to="/"
+          <Link
+            to="home"
             className="tracking-wider cursor-pointer font-bold
              text-center text-black capitalize"
           >
             Addismotortaxi
-          </a>
+          </Link>
         </div>
 
         <div className={show ? "activeul menu" : "menu"}>
+          <div className="overlay"></div>
           <ul className="flex">
             <li>
               <Link
@@ -44,7 +45,7 @@ const Nav = () => {
                 offset={-100}
                 duration={500}
                 onClick={() => handleClick(0)}
-                to="/"
+                to="home"
               >
                 home
               </Link>
@@ -98,7 +99,7 @@ const Nav = () => {
               </Link>
             </li>
 
-            <button className="bg-green-400 text-base text-black capitalize font-medium  px-3 py-2 rounded-md">
+            <button className="bg-[#1F618D] text-base border-none text-white capitalize font-medium  px-3 py-2 rounded-md">
               help center
             </button>
           </ul>
@@ -132,12 +133,11 @@ const Header = styled.div`
   height: 3.3rem;
   top: 0;
   left: 0;
-  position: fixed;
+  position: sticky;
   display: flex;
   z-index: 100;
   transition: all 0.3s;
-  
-  
+
   nav {
     display: flex;
     align-items: center;
@@ -197,6 +197,7 @@ const Header = styled.div`
           height: 100%;
           align-items: center;
           column-gap: 2rem;
+          padding: 3.25rem 0;
         }
         li {
           align-items: center;
@@ -228,10 +229,13 @@ const Header = styled.div`
             text-transform: capitalize;
             transition: all 0.3s ease-in-out;
             cursor: pointer;
-            color: #ffffff;
+            color: #000;
             text-decoration: none;
-            &:hover{
+            &:hover {
               color: #ffa500;
+            }
+            @media screen and (max-width: 768px) {
+              color: #fff;
             }
           }
         }

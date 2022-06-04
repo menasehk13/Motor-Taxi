@@ -61,11 +61,10 @@ const Riders = () => {
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  margin: 30px 0;
-  background-color:#2aa ;
+  margin: 3rem 0;
   .content {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1110px;
     width: 100%;
     height: 100%;
     display: flex;

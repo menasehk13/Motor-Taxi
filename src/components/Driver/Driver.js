@@ -63,14 +63,14 @@ const Driver = () => {
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  margin: 30px 0;
+  margin: 5rem 0;
   .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1110px;
     @media screen and (max-width: 768px) {
       flex-direction: column-reverse;
       justify-content: center;

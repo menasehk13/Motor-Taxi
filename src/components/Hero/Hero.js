@@ -1,16 +1,22 @@
-import React from "react";
+import React,{useEffect}from "react";
 import styled from "styled-components";
 import { FaCheckCircle } from "react-icons/fa";
 import ImageDriver from "../../assets/image/t3.png";
 import img1 from "../../assets/image/app2-removebg-preview.png";
 import img2 from "../../assets/image/appp-removebg-preview.png";
+import { TimelineLite } from "gsap/all";
 
 const Hero = () => {
+   useEffect(() => {
+      const tll = new TimelineLite({ delay: 0.3 });
+       tll.from('.data', { duration: 0.5, opacity: 0, y: 150, delay: 1.5,easy:"back.out(1.7)"});
+       tll.fromTo('.check',{opacity:0.3,scale:0},{opacity:1,scale:1,ease:"elastic.out(1.1)"}) 
+   },[])  
   return (
-    <Container id="home  ">
+    <Container id="home">
       <div className="content flex justify-between gap-3 items-center">
         {/* data */}
-        <div className="data   mt-3">
+        <div className="data   mt-3"id='data'>
           <h1 className="text-black text-[36px] space-y-0 font-bold  ">
             Download app Start drive <br />
             and Earn money!
@@ -77,11 +83,9 @@ const Hero = () => {
 };
 const Container = styled.div`
   width: 100%;
-  padding: 15px 0;
-  height: ;
-  top: 0;
-  left: 0;
-  position: relative;
+  padding: 25px 0;
+  height: 100%;
+  
   .content {
     margin: 0 auto;
     max-width: 1110px;
@@ -93,8 +97,6 @@ const Container = styled.div`
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
-      height: 100%;
-      width: 100%;
       justify-content: center;
       text-align: center;
     }
@@ -138,9 +140,7 @@ const Container = styled.div`
     }
 
     .right-img-data {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      
       .img-g {
         height: 100%;
         @media screen and (max-width: 768px) {
