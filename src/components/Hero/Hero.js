@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="content flex justify-between gap-3 items-center">
         {/* data */}
         <div className="data   mt-3"id='data'>
-          <h1 className="text-black text-[36px] space-y-0 font-bold  ">
+          <h1 className="text-black text-[36px] font-bold  ">
             Download app Start drive <br />
             and Earn money!
           </h1>
